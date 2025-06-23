@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{d4fafd46-6380-484f-9141-986bc1c0d822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Utils">
+      <UniqueIdentifier>{8e761f91-1f0b-48cb-bc0d-0239cc9625f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Main\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="DummyClient.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Main\Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
