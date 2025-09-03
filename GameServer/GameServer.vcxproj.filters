@@ -4,7 +4,7 @@
     <Filter Include="Main">
       <UniqueIdentifier>{cb54586f-5274-4361-9fa2-d7ad90413a31}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main\Utils">
+    <Filter Include="Utils">
       <UniqueIdentifier>{8ea9721b-16cc-41af-aa6f-69924fbca0c6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -13,12 +13,18 @@
       <Filter>Main</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>Main\Utils</Filter>
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="LockFreeStack.cpp">
+      <Filter>Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
-      <Filter>Main\Utils</Filter>
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="LockFreeStack.h">
+      <Filter>Main</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
