@@ -157,6 +157,8 @@
   <ItemGroup>
     <ClCompile Include="GameServer.cpp" />
     <ClCompile Include="LockFreeStack.cpp" />
+    <ClCompile Include="LockFreeStack2.cpp" />
+    <ClCompile Include="LockFreeStack3.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -166,6 +168,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="LockFreeStack.h" />
+    <ClInclude Include="LockFreeStack2.h" />
+    <ClInclude Include="LockFreeStack3.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

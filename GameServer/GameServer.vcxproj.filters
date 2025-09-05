@@ -18,12 +18,24 @@
     <ClCompile Include="LockFreeStack.cpp">
       <Filter>Main</Filter>
     </ClCompile>
+    <ClCompile Include="LockFreeStack2.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="LockFreeStack3.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>Utils</Filter>
     </ClInclude>
     <ClInclude Include="LockFreeStack.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="LockFreeStack2.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="LockFreeStack3.h">
       <Filter>Main</Filter>
     </ClInclude>
   </ItemGroup>

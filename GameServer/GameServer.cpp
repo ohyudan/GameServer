@@ -51,32 +51,48 @@
 #include <mutex>
 #include <thread>
 #include "LockFreeStack.h"
+#include "LockFreeStack2.h"
 
 LockFreeStack<int32> s;
+LockFreeStack2<int32> s2;
+
 
 void Push()
 
 {
 	while (true) {
 		int32 value = rand() % 100;
-		s.Push(value);
+		s2.Push(value);
+		this_thread::sleep_for(chrono::milliseconds(100));
+		
 	}
 }
 
 void Pop()
 {
-	while (true) {
-		int32 value = 0;
-		if (s.TryPop(value)) {
-			std::cout << "Pop : " << value << std::endl;
+	/*while (true) {
+		int32 data = 0;
+		if (s.TryPop(data)) {
+			std::cout << data << std::endl;
 		}
+	}*/
+
+	while (true) {
+		auto data = s2.TryPop();
+		if(data!= nullptr)
+			std::cout << *data << std::endl;
 	}
 }
 
 int main()
 {
+	/*shared_ptr<int32> ptr;
+	bool value = atomic_is_lock_free(&ptr);*/
+
 	std::thread t1(Push);
 	std::thread t2(Pop);
+	std::thread t3(Pop);
 	t1.join();
 	t2.join();
+	t3.join();
 }
